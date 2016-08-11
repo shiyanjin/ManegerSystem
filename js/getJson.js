@@ -2,19 +2,27 @@
  * 获取json数据，并分页显示在页面上
  * Created by jinshiyan on 2016/8/10.
  */
-/*$("document").ready(function() {*/
 function getJson(){
     $.ajax({
         type: "POST",
-        url: "../"+url,
+        url: "../data.json",
         dataType: "json",
         success: function (data) {
+            console.log(data)
             getJsonData(data);
         }
     });
     adduser();
 }
 /*获取json数据，并分页显示*/
+/*function getJsonData(data) {
+    new Vue({
+        el:"#jsonTip",
+        data:{
+            items:data
+        }
+    })
+}*/
 function getJsonData(data){
     var totalCounts = data.length;//总数据量
     var pageSize = 10;//每页显示数据条数
@@ -77,7 +85,7 @@ function display(currentPage,pageSize,data){
         }
     })
     html+="</table>";
-    $('#jsonTip').append(music);
+    $('#jsonTip').append(html);
 }
 /*页码*/
 function page(currentPage,max) {

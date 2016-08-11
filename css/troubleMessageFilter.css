@@ -104,9 +104,9 @@ html,body{
     top:12px;
     left:180px;
 }
-/*.table-box ul{
-    margin:20px auto;
-    width:300px;
+.table-box ul{
+    margin-left:200px ;
+    width:450px;
     height:30px;
     line-height: 30px;
 }
@@ -116,7 +116,7 @@ html,body{
     text-align: center;
 }
 .table-box .text{
-    width:50px;
+    width:80px;
 }
 .table-box .number{
     width:30px;
@@ -133,7 +133,7 @@ html,body{
 }
 .table-box .firstOrLast a{
     color: #a2a2a2;
-}*/
+}
 /*筛选框*/
 .sub-menu-name{
     height:210px;
@@ -172,6 +172,7 @@ html,body{
     left:690px;
 }
 /*页码样式*/
+/*
 .pagination{
     width:552px;
     height:30px;
@@ -190,4 +191,4 @@ html,body{
 .pagination input{
     height:28px !important;
     line-height: 30px !important;
-}
+}*/

@@ -5,6 +5,7 @@
 $(document).ready(function () {
     changTopClass();//改变top导航栏激活项样式
     //changePage();//改变页码显示样式
+    getData();
     var currentPage = 1;
     var maxPage = 1;
     //alert(currentPage+" "+maxPage)

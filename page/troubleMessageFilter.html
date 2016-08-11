@@ -6,10 +6,10 @@
     <link type="text/css" rel="stylesheet" href="../css/troubleMessageFilter.css">
     <link type="text/css" rel="stylesheet" href="../dependency/bootstrap/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../dependency/font-awesome-4.5.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="../dependency/jqPagination/jqpagination.css">
-    <script src="../dependency/bootstrap/js/bootstrap.min.js"></script>
+
     <script src="../dependency/jquery/jquery.min.js"></script>
-    <script src="../dependency/jqPagination/jquery.jqpagination.min.js"></script>
+    <script src="../dependency/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
 </head>
 <body>
 <!--管理系统-->
@@ -42,13 +42,19 @@
         </div>
     </form>
     <!--信息表-->
-    <table class="table-bordered table-striped">
-        <tr>
-            <th>机器名<i class="fa fa-filter" onclick="display(event,'sub-menu-name')"></i></th>
-            <th>机器位置<i class="fa fa-filter" onclick="display(event,'sub-menu-position')"></i></th>
-            <th>故障描述</th>
-        </tr>
-        <tr>
+    <div id="trouble-message">
+        <table class="table-bordered table-striped">
+            <tr>
+                <th>机器名<i class="fa fa-filter" onclick="display(event,'sub-menu-name')"></i></th>
+                <th>机器位置<i class="fa fa-filter" onclick="display(event,'sub-menu-position')"></i></th>
+                <th>故障描述</th>
+            </tr>
+            <tr v-for="todo in todos">
+                <td>{{todo.name}}</td>
+                <td>{{todo.position}}</td>
+                <td>{{todo.message}}</td>
+            </tr>
+       <!-- <tr>
             <td>办公室一</td>
             <td>室内机</td>
             <td>失去连接（断网or断电）</td>
@@ -92,17 +98,18 @@
             <td>办公室二</td>
             <td>室外机</td>
             <td>获取不到信息</td>
-        </tr>
-    </table>
+        </tr>-->
+        </table>
+    </div>
     <!--页码-->
-    <div class="pagination">
+    <!--<div class="pagination">
         <a href="#" class="first" data-action="first">首页</a>
         <a href="#" class="previous" data-action="previous">上一页</a>
         <input type="text" readonly="readonly" data-max-page="40" />
         <a href="#" class="next" data-action="next">下一页</a>
         <a href="#" class="last" data-action="last">尾页</a>
-    </div>
-    <!--<ul id="page">
+    </div>-->
+    <ul id="page" class="pagination">
         <li class="text firstOrLast" id="first"><a href="#">首页</a></li>
         <li class="text"><a href="#">上一页</a></li>
         <li class="number active-page"><a href="#">1</a></li>
@@ -110,14 +117,12 @@
         <li class="number"><a href="#">3</a></li>
         <li class="text"><a href="#">下一页</a></li>
         <li class="text" id="last"><a href="#">尾页</a></li>
-    </ul>-->
+    </ul>
 </div>
 <script src="../js/changeTop.js"></script>
 <script src="../js/changePage.js"></script>
 <script src="../js/showTroubleMessage.js"></script>
 <script src="../js/displayCheckBox.js"></script>
-<script>
-
-</script>
+<script src="../js/getData.js"></script>
 </body>
 </html>
