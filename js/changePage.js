@@ -29,7 +29,7 @@ function changePage(){
 
 
 /*页码*/
-/*
+
 function page(currentPage,max) {
     $('.pagination').jqPagination({
         link_string : '${pageContext.request.contextPath}/widget/getForm'+'/?page={page_number}',
@@ -37,4 +37,4 @@ function page(currentPage,max) {
         max_page : max, //设置最大页 默认为1
         page_string : '当前第{current_page}页,共{max_page}页',
     });
-}*/
+}

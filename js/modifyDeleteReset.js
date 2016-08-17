@@ -18,7 +18,7 @@ function modify(id){
 }
 /*删除用户*/
 function deleteuser(id){
-    /*alert(id);*/
+   /* alert(id);*/
     $("#delete-confirm").click(function(){
         $("#user"+id).remove();
     })

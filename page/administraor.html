@@ -26,9 +26,7 @@
         <button type="button" class="btn-adduser" data-toggle="modal"
                 data-target="#adduser">新增用户</button>
         <!--用户信息表-->
-        <div id="jsonTip">
-
-        </div>
+        <div id="jsonTip"></div>
         <!--页码-->
         <div class="pagination" >
             <a href="#" class="first" data-action="first">首页</a>
@@ -37,124 +35,6 @@
             <a href="#" class="next" data-action="next">下一页</a>
             <a href="#" class="last" data-action="last">尾页</a>
         </div>
-       <!-- <table class="table-bordered table-striped table-hover">
-            <tr>
-                <th>登录名</th>
-                <th>姓名</th>
-                <th>联系方式</th>
-                <th>创建时间</th>
-                <th>上次登录时间</th>
-                <th>操作</th>
-            </tr>
-            <tr>
-                <td>jasmine</td>
-                <td>小花</td>
-                <td>13025875843</td>
-                <td>2016-08-07</td>
-                <td>今天14:56</td>
-                <td>
-                    <a href="#" data-toggle="modal" data-target="#modify">修改</a>
-                    <a href="#" class="modify" data-toggle="modal" data-target="#delete">删除</a>
-                    <a href="#" data-toggle="modal" data-target="#resetPassword">重置密码</a>
-                </td>
-            </tr>
-            <tr>
-                <td>pure</td>
-                <td>小草</td>
-                <td>1502453443</td>
-                <td>2016-08-06</td>
-                <td>今天12:56</td>
-                <td>
-                    <a href="#" data-toggle="modal" data-target="#modify">修改</a>
-                    <a href="#" data-toggle="modal" data-target="#delete">删除</a>
-                    <a href="#" data-toggle="modal" data-target="#resetPassword">重置密码</a>
-                </td>
-            </tr>
-            <tr>
-                <td>ffdfs</td>
-                <td>小白</td>
-                <td>13387659536</td>
-                <td>2016-08-03</td>
-                <td>2016-08-04 12:36</td>
-                <td>
-                    <a href="#" data-toggle="modal" data-target="#modify">修改</a>
-                    <a href="#" data-toggle="modal" data-target="#delete">删除</a>
-                    <a href="#" data-toggle="modal" data-target="#resetPassword">重置密码</a>
-                </td>
-            </tr>
-            <tr>
-                <td>gksl</td>
-                <td>小名</td>
-                <td>15875844233</td>
-                <td>2016-07-27</td>
-                <td>2016-08-01 08:56</td>
-                <td>
-                    <a href="#" data-toggle="modal" data-target="#modify">修改</a>
-                    <a href="#" data-toggle="modal" data-target="#delete">删除</a>
-                    <a href="#" data-toggle="modal" data-target="#resetPassword">重置密码</a>
-                </td>
-            </tr>
-            <tr>
-                <td>bfsd</td>
-                <td>小小</td>
-                <td>13758025843</td>
-                <td>2016-07-24</td>
-                <td>2016-07-27 13:56</td>
-                <td>
-                    <a href="#" data-toggle="modal" data-target="#modify">修改</a>
-                    <a href="#" data-toggle="modal" data-target="#delete">删除</a>
-                    <a href="#" data-toggle="modal" data-target="#resetPassword">重置密码</a>
-                </td>
-            </tr>
-            <tr>
-                <td>gffvsa</td>
-                <td>小妮</td>
-                <td>13843082575</td>
-                <td>2016-07-20</td>
-                <td>2016-07-24 14:56</td>
-                <td>
-                    <a href="#" data-toggle="modal" data-target="#modify">修改</a>
-                    <a href="#" data-toggle="modal" data-target="#delete">删除</a>
-                    <a href="#" data-toggle="modal" data-target="#resetPassword">重置密码</a>
-                </td>
-            </tr>
-            <tr>
-                <td>jfjfkdsl</td>
-                <td>小筋</td>
-                <td>18587025843</td>
-                <td>2016-07-17</td>
-                <td>2016-07-19 21:56</td>
-                <td>
-                    <a href="#" data-toggle="modal" data-target="#modify">修改</a>
-                    <a href="#" data-toggle="modal" data-target="#delete">删除</a>
-                    <a href="#" data-toggle="modal" data-target="#resetPassword">重置密码</a>
-                </td>
-            </tr>
-            <tr>
-                <td>ffdlhg</td>
-                <td>小菜</td>
-                <td>15027584583</td>
-                <td>2016-07-07</td>
-                <td>2016-07-17 15:26</td>
-                <td>
-                    <a href="#" data-toggle="modal" data-target="#modify">修改</a>
-                    <a href="#" data-toggle="modal" data-target="#delete">删除</a>
-                    <a href="#" data-toggle="modal" data-target="#resetPassword">重置密码</a>
-                </td>
-            </tr>
-            <tr>
-                <td>kjjhio</td>
-                <td>小况</td>
-                <td>13758025843</td>
-                <td>2016-07-02</td>
-                <td>2016-07-12 10:56</td>
-                <td>
-                    <a href="#" data-toggle="modal" data-target="#modify">修改</a>
-                    <a href="#" data-toggle="modal" data-target="#delete">删除</a>
-                    <a href="#" data-toggle="modal" data-target="#resetPassword">重置密码</a>
-                </td>
-            </tr>
-        </table>-->
     </div>
     <!--模态框 新增用户-->
     <div class="modal fade" id="adduser">
@@ -266,38 +146,6 @@
         </div>
     </div>
 
-    <script src="../js/changeTop.js"></script>
-    <!--top与页码样式-->
-    <script src="../js/showUserMessageTable.js"></script>
-    <!--增加用户-->
-    <script src="../js/adduser.js"></script>
-    <!--删除确认后显示删除成功-->
-    <script src="../js/deleteSuccess.js"></script>
-    <script src="../js/getJson.js"></script>
-
-    <script src="../js/modifyDeleteReset.js"></script>
-    <!--<script src="../js/changePassword.js"></script>-->
-    <script>
-        /*新增用户或修改账户信息时，输入用户名、姓名、联系方式
-        * 当所有信息输入完成后，确认按钮可用
-        * 否则，确认按钮处于禁用状态
-        */
-        function keyUP(event,className){
-            var flag = true;//是否全部输入  默认true
-            $("."+className+" .modal-body input").each(function (){
-                if($(this).val()==""){//有空输入，将flag置为false
-                    flag = false;//
-                }
-            });
-            if(flag){
-                $("."+className+" .modal-body button").attr("disabled",false);
-                $("."+className+" .modal-body button").addClass("add-confirm");
-            }else{
-                $("."+className+" .modal-body button").removeClass("add-confirm");
-                $("."+className+" .modal-body button").attr("disabled",true);
-            }
-        }
-    </script>
 </body>
 </html>
 
@@ -305,3 +153,36 @@
 <script src="../dependency/bootstrap/js/bootstrap.min.js"></script>
 <script src="../dependency/jqPagination/jquery.jqpagination.min.js"></script>
 <script src="../dependency/vue.js"></script>
+
+<script src="../js/changeTop.js"></script>
+<!--top与页码样式-->
+<script src="../js/showUserMessageTable.js"></script>
+<!--增加用户-->
+<script src="../js/adduser.js"></script>
+<!--删除确认后显示删除成功-->
+<script src="../js/deleteSuccess.js"></script>
+<script src="../js/getJson.js"></script>
+
+<script src="../js/modifyDeleteReset.js"></script>
+<!--<script src="../js/changePassword.js"></script>-->
+<script>
+    /*新增用户或修改账户信息时，输入用户名、姓名、联系方式
+     * 当所有信息输入完成后，确认按钮可用
+     * 否则，确认按钮处于禁用状态
+     */
+    function keyUP(event,className){
+        var flag = true;//是否全部输入  默认true
+        $("."+className+" .modal-body input").each(function (){
+            if($(this).val()==""){//有空输入，将flag置为false
+                flag = false;//
+            }
+        });
+        if(flag){
+            $("."+className+" .modal-body button").attr("disabled",false);
+            $("."+className+" .modal-body button").addClass("add-confirm");
+        }else{
+            $("."+className+" .modal-body button").removeClass("add-confirm");
+            $("."+className+" .modal-body button").attr("disabled",true);
+        }
+    }
+</script>

@@ -14,7 +14,7 @@ function adduser(){
         html += "<td>"+loginName+"</td><td>"+name+
             "</td><td>"+telephone+"</td><td>"+registerTime+"</td>" +
             "<td>"+lastLoginTime+"</td><td>" +
-            "<a href='#' data-toggle='modal' data-target='#modify'>修改</a>" +
+            "<a href='#' data-toggle='modal' data-target='#modify>修改</a>" +
             "<a href='#' data-toggle='modal' data-target='#delete'>删除</a>" +
             "<a href='#' data-toggle='modal' data-target='#resetPassword'>重置密码</a>"+
             "</td></tr>"
