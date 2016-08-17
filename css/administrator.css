@@ -265,7 +265,6 @@ html,body{
 .pagination{
     width:552px;
     height:30px;
-    border: 1px solid red;
     margin-left:200px !important;
 }
 .pagination a{
